@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveller - Câmbio de Moedas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav>
+    <div class="refresh_page"></div>
+        <a href="/"><i class="fa-solid fa-coins"></i></a>
+        <h2>Traveller - Câmbio de Moedas</h2>
+    </div>
+
+    </nav>
+    <main>
+        <div class="container">
+            <h3>Conversor de Moedas Online!</h3>
+            <div class="currency">
+                <select id="your-currency">
+                    <option value="USD">Dólar Americano (USD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                    <option value="GBP">Libra Esterlina (GBP)</option>
+                    <option value="BRL" selected >Real Brasileiro (BRL)</option>
+                    <option value="JPY">Iene Japonês (JPY)</option>
+                    <option value="CNY">Yuan Chinês (CNY)</option>
+                </select>
+                <input type="number" id="amount-first" value="1" min="0" />
+            </div>
+        
+            <div class="currency">
+                <select id="target-currency">
+                    <option value="USD" selected >Dólar Americano (USD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                    <option value="GBP">Libra Esterlina (GBP)</option>
+                    <option value="BRL">Real Brasileiro (BRL)</option>
+                    <option value="JPY">Iene Japonês (JPY)</option>
+                    <option value="CNY">Yuan Chinês (CNY)</option>
+                </select>
+                <input type="number" id="amount-second" disabled />
+            </div>
+            <p class="exchange-rate" id="exchange-rate">1 BRL = 5.4 USD</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
